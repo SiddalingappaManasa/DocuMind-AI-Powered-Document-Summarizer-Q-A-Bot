@@ -13,7 +13,7 @@ This project combines document retrieval and language model reasoning, making it
 ✅ Upload documents (PDF, Word, Text)
 ✅ AI-generated summaries in simple language
 ✅ Ask natural language questions about the document
-✅ Hybrid mode → retrieves factual answers & also provides contextual analysis
+✅ Retrieval-augmented approach combining semantic search and language model reasoning for factual and contextual response
 ✅ User-friendly Streamlit web interface
 
 🛠️ Tech Stack
@@ -33,6 +33,14 @@ Streamlit (for interactive UI)
 ├── requirements.txt   # Dependencies  
 ├── sample_docs/       # Example documents to test  
 └── README.md          # Project documentation  
+
+🧠 NLP & System Design
+
+- Performed text extraction and preprocessing (cleaning, tokenization, chunking)
+- Split long documents into overlapping chunks to preserve context
+- Converted text chunks into embeddings for semantic similarity search
+- Retrieved top relevant chunks using FAISS
+- Passed retrieved context to the language model for accurate, context-aware answers
 
 ⚡ How to Run Locally
 
