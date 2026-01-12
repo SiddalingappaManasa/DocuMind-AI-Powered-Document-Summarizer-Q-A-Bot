@@ -1,4 +1,5 @@
-# DocuMind-AI-Powered-Document-Summarizer-Q-A-Bot
+# DocuMind – RAG-Based Document Summarizer & Context-Aware Q&A System
+
 AI-powered Document Summarizer &amp; Q&amp;A Bot | Upload PDFs or Docs, get instant summaries &amp; context-aware answers
 
 DocuMind is an AI-powered tool that allows users to upload documents (PDF, DOCX, TXT) and instantly:
