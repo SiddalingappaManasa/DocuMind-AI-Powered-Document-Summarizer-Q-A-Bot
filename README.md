@@ -1,14 +1,10 @@
 # DocuMind – RAG-Based Document Summarizer & Context-Aware Q&A System
 
-AI-powered Document Summarizer &amp; Q&amp;A Bot | Upload PDFs or Docs, get instant summaries &amp; context-aware answers
+DocuMind is an AI-powered document intelligence system that allows users to upload documents (PDF, DOCX, TXT) and generate concise summaries and context-aware answers.
 
-DocuMind is an AI-powered tool that allows users to upload documents (PDF, DOCX, TXT) and instantly:
-Get summaries of long documents.
-Ask questions about the content.
-Receive both direct factual answers and analytical insights.
+The system is designed to handle long documents that exceed LLM context limits by combining semantic retrieval with language model reasoning, ensuring responses are grounded in the source content rather than generic model outputs.
 
-This project combines document retrieval and language model reasoning, making it useful for students, researchers, corporates, and anyone who needs to quickly understand lengthy documents.
-
+This project applies Retrieval-Augmented Generation (RAG) principles to improve reliability and factual grounding in document-based question answering.
 🚀 Features
 
 ✅ Upload documents (PDF, Word, Text)
@@ -20,20 +16,33 @@ This project combines document retrieval and language model reasoning, making it
 🛠️ Tech Stack
 
 Python
-
 LangChain (for document processing & retrieval)
-
 FAISS (vector database for semantic search)
-
 OpenAI API (for natural language understanding & generation)
-
 Streamlit (for interactive UI)
 
 📂 Project Structure
 ├── app.py             # Main Streamlit app  
 ├── requirements.txt   # Dependencies  
 ├── sample_docs/       # Example documents to test  
-└── README.md          # Project documentation  
+└── README.md          # Project documentation 
+
+🧠Key Design Decisions
+
+-Used a Retrieval-Augmented Generation (RAG) approach to ground LLM responses in document content and reduce hallucinations instead of relying on direct prompting.
+-Applied overlapping chunking while splitting documents to preserve contextual continuity across sections and improve semantic retrieval quality.
+-Used FAISS as the vector database to enable efficient and scalable similarity search over document embeddings.
+-Designed constrained prompts so the language model answers strictly based on retrieved document chunks, improving factual accuracy and reliability.
+
+📈 Evaluation
+
+DocuMind was evaluated qualitatively by comparing its responses against direct LLM prompting on the same documents.
+
+- Responses generated using the RAG pipeline were more contextually accurate and relevant.
+- Hallucinated or unsupported answers were significantly reduced when answers were grounded in retrieved document chunks.
+- Summaries remained concise while retaining key factual information from the source documents.
+
+This evaluation highlights the effectiveness of retrieval-augmented generation for document intelligence tasks.
 
 🧠 NLP & System Design
 
@@ -94,6 +103,6 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 
 📧 Contact
 
-👩‍💻 Developed by Manu (Manasa Siddalingappa)
+👩‍💻 Developed by Manasa Siddalingappa
 🔗 LinkedIn
  | Portfolio
