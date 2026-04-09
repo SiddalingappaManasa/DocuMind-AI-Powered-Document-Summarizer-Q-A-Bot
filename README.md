@@ -20,9 +20,7 @@ DocuMind enables instant summarization and context-aware question answering usin
 - Handled **100+ document-based queries** with real-time responses  
 - Reduced manual document analysis effort by **60%**  
 - Improved response relevance using **semantic search and embeddings**  
-
 ---
-
 ## 🎯 Features
 
 - ✅ **Multi-format Document Support**: Upload PDF, DOCX, and TXT files
