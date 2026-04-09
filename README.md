@@ -1,9 +1,13 @@
 # 📚 DocuMind – AI Document Chatbot (RAG System)
+
 A production-ready Retrieval-Augmented Generation (RAG) system for document question-answering and summarization, built with Streamlit, OpenAI, and FAISS.
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.32-red.svg)
 ![OpenAI](https://img.shields.io/badge/OpenAI-API-green.svg)
+
+---
+
 ## 🎯 Problem Statement
 
 Extracting insights from large documents is time-consuming and inefficient.  
@@ -17,6 +21,8 @@ DocuMind enables instant summarization and context-aware question answering usin
 - Reduced manual document analysis effort by **60%**  
 - Improved response relevance using **semantic search and embeddings**  
 
+---
+
 ## 🎯 Features
 
 - ✅ **Multi-format Document Support**: Upload PDF, DOCX, and TXT files
@@ -28,7 +34,7 @@ DocuMind enables instant summarization and context-aware question answering usin
 - ✅ **Caching**: Reduces API calls and improves performance
 - ✅ **Clean UI**: User-friendly Streamlit interface
 - ✅ **Production-Ready**: Error handling, logging, and modular architecture
-
+---
 ## 🏗️ Architecture
 
 ```
