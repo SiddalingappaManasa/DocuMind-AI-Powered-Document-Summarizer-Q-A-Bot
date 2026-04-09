@@ -27,7 +27,9 @@ DocuMind enables instant summarization and context-aware question answering usin
 - ✅ **Caching**: Reduces API calls and improves performance
 - ✅ **Clean UI**: User-friendly Streamlit interface
 - ✅ **Production-Ready**: Error handling, logging, and modular architecture
+## 🖥️ Demo
 
+Demo available upon request or can be run locally using the steps below.
 ## 🏗️ Architecture
 
 ```
